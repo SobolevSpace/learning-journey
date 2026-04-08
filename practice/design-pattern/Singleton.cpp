@@ -42,7 +42,7 @@ int main() {
     Singleton<TestType> tester2;
     void* p2 = &tester2.GetInstance();
 
-    if (p == p2) {
+    if (p == p2 && TestType::construct_count == 1) {
         std::cout<<"Unit Test Passed."<<std::endl;
         return 0;
     } else {
