@@ -1,31 +1,18 @@
 @echo off
+setlocal enabledelayedexpansion
 
-echo Testing Singleton pattern...
-g++ Singleton.cpp -o Singleton.exe
-if errorlevel 1 (
-    echo Compile failed!
-    pause
-    exit /b 1
-)
-Singleton.exe
-echo.
+set PATTERNS=Singleton Factory Prototype Builder
 
-echo Testing Factory pattern...
-g++ Factory.cpp -o Factory.exe
-if errorlevel 1 (
-    echo Compile failed!
-    pause
-    exit /b 1
+for %%p in (%PATTERNS%) do (
+    echo Testing %%p pattern...
+    g++ %%p.cpp -o %%p.exe
+    if errorlevel 1 (
+        echo Compile failed!
+        pause
+        exit /b 1
+    )
+    %%p.exe
+    echo.
 )
-Factory.exe
-echo.
 
-echo Testing Prototype pattern...
-g++ Prototype.cpp -o Prototype.exe
-if errorlevel 1 (
-    echo Compile failed!
-    pause
-    exit /b 1
-)
-Prototype.exe
 pause
