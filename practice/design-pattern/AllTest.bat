@@ -18,4 +18,14 @@ if errorlevel 1 (
     exit /b 1
 )
 Factory.exe
+echo.
+
+echo Testing Prototype pattern...
+g++ Prototype.cpp -o Prototype.exe
+if errorlevel 1 (
+    echo Compile failed!
+    pause
+    exit /b 1
+)
+Prototype.exe
 pause
