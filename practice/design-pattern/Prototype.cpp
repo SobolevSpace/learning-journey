@@ -1,4 +1,5 @@
 // 原型模式
+// 用于提供需要复制的对象 通过Clone方法创建
 
 #include <iostream>
 
@@ -14,7 +15,7 @@ public:
 
 class ConcretePrototype : public IPrototype {
 public:
-    ConcretePrototype() {
+    ConcretePrototype(): IPrototype() {
         m_size = 10;
         m_data = new int[m_size];
         for (int i = 0; i < m_size; i++) {
