@@ -1,7 +1,7 @@
 @echo off
 setlocal enabledelayedexpansion
 
-set PATTERNS=Singleton Factory Prototype Builder Adapter Bridge Combinator Decorator
+set PATTERNS=Singleton Factory Prototype Builder Adapter Bridge Combinator Decorator Facade
 
 for %%p in (%PATTERNS%) do (
     echo Testing %%p pattern...
