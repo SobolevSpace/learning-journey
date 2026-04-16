@@ -20,6 +20,9 @@
 
 - MU 15-418: Parallel Computer Architecture and Programming 网课 卡内基梅隆
 
+## 金融论文
+
+- Kronos：金融市场语言的基础模型
 
 ~~
 ## ~~设计模式~~
