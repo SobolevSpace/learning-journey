@@ -3,14 +3,18 @@
 
 ## 概率论和随机过程
 
-- 学习概率论基础知识
-- 学习随机过程理论
-- 掌握常用概率分布
+- ~~学习概率论基础知识~~
+- ~~学习随机过程理论~~
+- ~~掌握常用概率分布~~
 - 理解马尔可夫过程
 
 ## CUDA与异构计算
 
 - Programming Massively Parallel Processors 经典书籍
+
+- flash-attn
+
+- cutlass
 
 ## 操作系统
 
